@@ -1,0 +1,4 @@
+Dname=sun.jdbc.odbc.JdbcOdbcDriver 
+URL=jdbc:jdbc:oracle:thin:@localhost:1521:xe
+Uname=system 
+password=manager

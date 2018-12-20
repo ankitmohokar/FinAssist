@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: learnf.aiml -->
+<!-- Author: FinAssist Team -->
+<!-- Last modified: December 07, 2018 -->
+<!--  -->
+<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
+<!--  -->
+<!-- The SUPER brain is Copyright &copy; 2018 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<category><pattern>IS DOG AN <STAR INDEX="2"/></pattern>
+<template>Yes.</template>
+</category>
+<category><pattern>WHAT IS SANKET</pattern>
+<template>my friend.</template>
+</category>
+<category><pattern>WHAT IS EARTH</pattern>
+<template>a planet.</template>
+</category>
+<category><pattern>WHAT IS SHIVANI</pattern>
+<template>not my friend.</template>
+</category>
+<category><pattern>WHAT IS CHINMAY</pattern>
+<template>a boy.</template>
+</category>
+<category><pattern>WHAT IS MY ROOMMATE</pattern>
+<template>shubham</template>
+</category>
+<category><pattern>WHAT IS SHUBHAM</pattern>
+<template>Your roommate</template>
+</category>
+<category><pattern>WHAT IS SUN</pattern>
+<template>hot and red.</template>
+</category>
+<category><pattern>WHAT IS DOG</pattern>
+<template>An animal.</template>
+</category>
+<category><pattern>WHAT IS AN ANIMAL</pattern>
+<template>dog.</template>
+</category>
+</aiml>

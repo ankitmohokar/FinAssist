@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title> Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+
+    <script type='text/javascript'>
+
+
+    </script>
+
+</head>
+
+<body id="body-id">
+
+    <nav>
+        <div class="toggle">
+
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+             <li><a href="ContactUs.html">Contact</a></li>       
+             <li style="float: right; font-weight: bold;"><a href="sign-in.jsp">Login</a></li>
+
+        </ul>
+    </nav>
+        
+
+    <div class="welcome-header">
+
+        <h1>Welcome to FinAssist</h1>
+        
+        <center><h3 style="color: green">Your money is always secured</h3></center>
+    </div>
+
+
+<!-- 
+    <div class="loginbox">
+        <img src="avatar.png" class="avatar">
+        <h1> Login Here </h1>
+        <form id="sign-in" action="home.html">
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password">
+            <input type="submit" onclick="goToHome()" name="" value="Login">
+            <a href="#"> Lost your Password?</a><br />
+            <a href="sign-up.html"> Don't have an account?</a>
+        </form>
+    </div> -->
+
+
+    <!-- <div class="chat-box">
+        <div class="chat-head">
+            <h2>FinAssist</h2>
+            <img src="https://maxcdn.icons8.com/windows10/PNG/16/Arrows/angle_down-16.png" title="Expand Arrow" width="16">
+        </div>
+        <div class="chat-body">
+            <div class="msg-insert">
+<div class="msg-send"> Send message </div>
+<div class="msg-receive"> Received message </div>
+</div>
+            <div class="chat-text">
+                <textarea placeholder="Send"></textarea>
+            </div>
+        </div>
+    </div> -->
+
+    <script>
+
+        function goToHome() {
+            document.getElementById("sign-in").submit();
+        }
+
+
+
+        $(function(){
+	var arrow = $('.chat-head img');
+	var textarea = $('.chat-text textarea');
+
+	arrow.on('click', function(){
+		var src = arrow.attr('src');
+
+		$('.chat-body').slideToggle('fast');
+		if(src == 'https://maxcdn.icons8.com/windows10/PNG/16/Arrows/angle_down-16.png'){
+			arrow.attr('src', 'https://maxcdn.icons8.com/windows10/PNG/16/Arrows/angle_up-16.png');
+		}
+		else{
+			arrow.attr('src', 'https://maxcdn.icons8.com/windows10/PNG/16/Arrows/angle_down-16.png');
+		}
+	});
+
+	textarea.keypress(function(event) {
+		var $this = $(this);
+
+		if(event.keyCode == 13){
+			var msg = $this.val();
+			$this.val('');
+			$('.msg-insert').prepend("<div class='msg-send'>"+msg+"</div>");
+			}
+	});
+
+});
+
+    </script>
+
+</body>
+
+</html>

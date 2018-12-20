@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    width: 100%;
+}
+
+body{
+    background: url("./images/back.jpg");
+    background-size: cover;
+}
+
+.intro{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url("./images/back.jpg");
+    background-repeat: no-repeat;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 18%;
+}
+.chatTitle{
+    display: none;
+    padding: 0;
+}
+.chatTitle h2{
+    font-family: 'Crimson Text', sans-serif;
+
+    font-size: 300%;
+    font-weight: 100;
+    color: #2c205e;
+    line-height: 20%;
+}
+.content h1{
+    font-family: 'Crimson Text', sans-serif;
+
+    font-size: 600%;
+    font-weight: 100;
+    color: #2c205e;
+    line-height: 70%;
+}
+
+.btn{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 135%;
+    font-weight: 400;
+    color: #3a6168;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid #3a6168;
+    padding: 10px 20px;
+    border-radius: 9px;
+    transition: all 0.5s;
+
+}
+
+.btn:hover{
+    color: #CBDFD6;
+    border: solid #cbdfd6 2px;
+
+}
+
+.enter-button{
+    opacity: 1;
+}
+
+
+.enter-button{
+
+    xopacity: 0;
+    transform: translate3d(0,-30px,0);
+}
+
+#chatbotDisp{
+    display: none;
+}
+
+.chatbox{
+
+    xborder: solid ;
+    border-radius: 30px;
+    height: 600px;
+    width: 500px;
+    min-width: 390px;
+    background: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 3px #cccccc;
+}
+
+.sendButton{
+    border-radius: 30px !important;
+}
+
+.textArea{
+    border-radius: 30px !important;
+}
+
+.chatlogs{
+    padding: 10px;
+    width: 100%;
+    height: 450px;
+    xbackground: #eee;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+    xdisplay: block;
+
+}
+
+
+
+.chat{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    xbackground: #2c205e;
+
+}
+
+
+.chat .user-photo{
+    width: 60px;
+    height: 60px;
+    xbackground-image: url("./images/chatuser.png") !important;
+    background: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+.chat .chat-message{
+    width: 70%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    xbackground: #1ddced;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.friend .chat-message{
+    background: #1adda4;
+    xfloat: left;
+}
+
+.self .chat-message{
+    background: #1ddced;
+    	order: -1;
+    	xfloat: right;
+}
+
+
+.chat-form{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.chat-form textarea{
+    background: #fbfbfb;
+    width: 75%;
+    height: 50px;
+    border: 2px solid #eee;
+    border-radius: 3px;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.chat-form textarea:focus {
+    background: #fff;
+}
+
+
+.chat-form textarea::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+.chat-form textarea::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: rgba(0,0,0,.1);
+}
+
+
+
+
+.chatlogs::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+.chatlogs::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: rgba(0,0,0,.1);
+}
+
+.chat-form button{
+    background: #1ddced;
+    padding: 5px 15px;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #0eb2c1;
+    cursor: pointer;
+
+    -webkit-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    -o-transition: background .2s ease;
+}
+
+.chat-form button:hover{
+    background: #13c8d9;
+}
+
+.chat .user-photo img {
+    width: 100%;
+
+}
+
+
+.chatphoto{
+	background-image: url("./images/chatuser.png") !important;
+	background-size: cover !important;
+	xbackground: #FFF !important;
+	
+}
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+    .content{
+        padding-bottom: 30%;
+
+    }
+    .content h1{
+        font-size: 450%;
+    }
+    .btn{
+        font-size: 130%;
+        padding: 9px 17px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .content{
+        padding-bottom: 40%;
+
+    }
+    .content h1{
+        font-size: 300%;
+    }
+    .btn{
+        font-size: 110%;
+        padding: 9px 17px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .content{
+        padding-bottom: 50%;
+
+    }
+    .content h1{
+        font-size: 250%;
+    }
+    .btn{
+        font-size: 110%;
+        padding: 6px 14px;
+    }
+	
+}
